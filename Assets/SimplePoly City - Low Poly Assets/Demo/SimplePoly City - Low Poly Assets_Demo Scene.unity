@@ -1241,7 +1241,7 @@ MonoBehaviour:
   height: 150
   minPos: {x: -20, y: 0, z: -20}
   maxPos: {x: 270, y: 0, z: 250}
-  timeBetweenSpawn: 0.00006
+  timeBetweenSpawn: 0
   despawnTime: 10
 --- !u!4 &49795827 stripped
 Transform:
