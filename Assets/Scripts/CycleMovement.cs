@@ -28,7 +28,7 @@ public class CycleMovement : MonoBehaviour
             transform.position = transform.position + -transform.forward * Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
         }
 
-        Transform tans = GameObject.Find("").GetComponent<Transform>();
+        //Transform tans = GameObject.Find("").GetComponent<Transform>();
         
         transform.Rotate(0,Input.GetAxis("Horizontal"),0);
     }

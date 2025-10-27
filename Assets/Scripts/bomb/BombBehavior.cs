@@ -73,7 +73,7 @@ public class BombBehavior : MonoBehaviour
     {
         onAir = false;
         Kaboom(collision.gameObject);
-        Debug.Log("Enter");
+       // Debug.Log("Enter");
     }
 
 
