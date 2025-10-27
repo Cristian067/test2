@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
+//using System.Diagnostics;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -62,11 +63,13 @@ public class Spawner : MonoBehaviour
                 targets.Add(target);
             }
 
-            Transform targetToKill = targets[Random.Range(0, targets.Count)].transform;
-            spawnPos = new Vector3(targetToKill.position.x,height,targetToKill.position.z);
+            GameObject targetToKill = targets[Random.Range(0, targets.Count)];
+            Transform targetTransform = targetToKill.transform;
+            spawnPos = new Vector3(targetTransform.position.x, height, targetTransform.position.z);
+            Debug.Log("Target: " + targetToKill.name + " " + targetTransform.position);
             targets.Clear();
             bombCountToTrack = 0;
-
+            
 
         }
         else

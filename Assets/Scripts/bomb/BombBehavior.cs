@@ -43,6 +43,11 @@ public class BombBehavior : MonoBehaviour
             explosions[0].active = true;
             target.GetComponent<Vehicles>().LoseLife();
         }
+        if (target.tag == "OfficialVehicle")
+        {
+            explosions[1].active = true;
+            target.GetComponent<Vehicles>().LoseLife();
+        }
         else if (target.tag == "Building")
         {
             explosions[1].active = true;
